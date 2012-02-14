@@ -6,17 +6,22 @@
 #import "Restaurant.h"
 
 @implementation Restaurant
-@synthesize address, name;
+@synthesize address, name, cuisineType, yearOpened;
 
 - (id)init {
     self = [super init];
     if (self) {
-        name = @"Congee Bowery";
-        address = @"207 Bowery\nNew York, NY 10002";
+        name = @"Nahm Thai Kitchen";
+        address = @"194 Fifth Ave, Park Slope, Brooklyn, NY 11217";
+        cuisineType = @"Thai";
+        yearOpened: 2010;
     }
     return self;
 }
 
-
+-(int) age
+{
+    return 2012 - yearOpened;
+}
 
 @end

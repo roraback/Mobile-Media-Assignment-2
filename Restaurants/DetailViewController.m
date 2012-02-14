@@ -15,11 +15,15 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad];  //required... Child of another class --if you wrote method, not necessary?
     restaurant = [[Restaurant alloc] init];
+//    restaurant.address = @"My address";
     
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
+    cuisineLabel.text = [restaurant cuisineType];
+//    addressLabel.text = 
+//    [NSString stringWithFormat:<#(NSString *), ...#>
 }
 
 - (void)viewDidUnload
